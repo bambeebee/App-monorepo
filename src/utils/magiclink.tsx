@@ -4,12 +4,12 @@ import Web3 from 'web3';
 
 let magicInstance: any;
 
-const public_key = 'pk_live_00D71F918671FD55';
+const public_key = '';
 
 const options = {
   extensions: [new ConnectExtension()],
   network: {
-    rpcUrl: 'https://eth-goerli.g.alchemy.com/v2/njYRyzBKjPnFADqJjhjp9M09jH6YUWnL',
+    rpcUrl: '',
   },
   // testMode: true,
 };
@@ -20,7 +20,7 @@ export const getMagicInstance = (
 ) => {
   if (!magicInstance) {
     magicInstance = new Magic(magicApiKey,{
-		network: "rinkeby",
+		network: "",
 		locale: "en_US",
 		extensions: [new ConnectExtension()]
 	  });
