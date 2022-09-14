@@ -12,7 +12,7 @@ import RootNavigator from './src/navigation';
 // importing screens
 import SplashScreenWeb from './src/screens/SplashScreen.web';
 // importing services
-import { store, persister } from './src/services/redux/index';
+import { store, persister } from './src/services/redux/store';
 import { CombinedDarkTheme } from './src/services/themes';
 
 export default function App() {
